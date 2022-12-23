@@ -1,0 +1,33 @@
+/* encabezado */
+  
+.encabezado {
+    background-color: #343436;
+    padding: 30px 20px;
+    opacity: 0.5;
+
+    &__contenido{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        &-menu{
+            display: flex;
+
+            & a {
+                color: #e2e8f0;
+                font-weight: bold;
+            }
+
+            & li {
+                margin: 0 15px;
+            }
+        }
+
+    }
+
+    &__responsive{
+        display:none;
+    }
+  }
