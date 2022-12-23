@@ -20,28 +20,10 @@ ul {
   font-style: normal;
 }
 
-@font-face {
-  font-family: "RobotSlab";
-  src: url("./media/fuentes/Roboto_Slab/static/RobotoSlab-Regular.ttf");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSans";
-  src: url("./media/fuentes/Open_Sans/static/OpenSans/OpenSans-Light.ttf");
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "OpenSansBold";
-  src: url("./media/fuentes/Open_Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf");
-  font-style: normal;
-}
-
 /* comunes */
 
 .encabezado {
-  background-color: black;
+  background-color: #343436;
   padding: 30px 20px;
   opacity: 0.5;
 }
@@ -53,7 +35,6 @@ ul {
 .encabezado__contenido-menu a {
   color: #e2e8f0;
   font-weight: bold;
-  font-family: "OpenSans";
 }
 
 .encabezado__contenido {
@@ -72,42 +53,6 @@ ul {
   margin: 0 15px;
 }
 
-.encabezado__icono {
-  display: none;
-}
-
-/* footer */
-
-.pie-pagina{
-  position:absolute;
-   bottom:0;
-   width:100%;
-   height:60px;   
-   background:#6cf;
-   background-color: black;
-}
-.pie-pagina__dato{
-  margin: 20px;
-  font-size: medium;
-}
-
-.pie-pagina__contenido{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-between;
-  align-items:center;
-  font-size:1.3rem;
-  font-family: "OpenSans";
-}
-
-.pie-pagina__contenido, .pie-pagina__contenido a{
-  color:rgba(255,255,255,.7)
-}
-
-.pie-pagina__contenido a:hover{
-  color:#fff;
-}
-
 /* index */
 
 .cover {
@@ -122,7 +67,6 @@ ul {
 
 .cover__nombre {
   font-size: 5rem;
- 
 }
 
 .cover__ocupacion {
@@ -149,12 +93,6 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
-
-.sobremi__dato-titulo{
-  font-family: "Raleway";
-  color: rgb(153, 87, 87);
-}
-
 .sobremi__dato {
   background-color: #a09eb4;
   width: 70%;
@@ -165,7 +103,6 @@ ul {
   margin: 30px;
   background-color: #a09eb4;
   line-height: 2;
-  font-family: "RobotSlab";
 }
 
 .sobremi__imagen {
@@ -182,7 +119,6 @@ ul {
 
 .contacto__div {
   color: rgb(153, 87, 87);
-  font-family: "Raleway";
 }
 
 .contacto__text-holder {
@@ -212,10 +148,6 @@ ul {
   color: white;
 }
 
-.contacto__form{
-  font-family: "RobotSlab";
-}
-
 /* cv */
 
 .proyectos__body {
@@ -233,7 +165,6 @@ ul {
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "RobotSlab";
 }
 
 .proyectos__titulo {
@@ -247,14 +178,6 @@ ul {
   border-radius: 10px;
   padding: 20px;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-}
-
-.proyectos__titulo-principal{
-   font-family: "Raleway";
-   margin-bottom: 40px;
-  text-align: center;
-  font-size: 30px;
-  color: rgb(153, 87, 87);
 }
 
 .proyecto__enlace {
@@ -280,11 +203,10 @@ ul {
 }
 
 .proyecto__encabezado-imagen {
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-top: 20px;
 }
-
 
 .proyecto__encabezado {
   position: relative;
@@ -307,16 +229,12 @@ ul {
   justify-content: center;
   align-items: center;
   font-size: 2rem;
-  font-family: "Raleway";
-  color: rgb(153, 87, 87);
 }
 
 .habilidades__contenido {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 40px;
-  font-family: "RobotSlab";
-  
 }
 
 .habilidades__contenido-dato {
@@ -330,205 +248,4 @@ ul {
   line-height: 2;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
 }
-
-.habilidades__contenido-titulo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.habilidades__contenido-articulo{
-  display: flex; 
-  align-items: center;
-  white-space: nowrap;
-}
-
-.habilidades__contenido-div{
-  width: 200px;
-}
-
-.habilidades__encabezado-imagen{
-  border-radius: 10px;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  width: 25px;
-}
-
-.habilidades__contenido-nivel{
-font-family: "OpenSansBold";
-padding-left: 5px; 
-}
-
-/* transiciones */
-
-.proyecto__encabezado:hover {
-  transform: scale(1.2);
-}
-
-/* responsive */
-
-@media (max-width: 1880px) {
-  /* pie pagina */
-
-  .pie-pagina {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-}
-
-/*cuando es menos de 1373, pasa esto*/
-
-@media (max-width: 1373px) {
-  /* sobre mi*/
-
-  .sobremi__dato {
-    word-wrap: break-word;
-    height: 700px;
-  }
-
-  /* pie pagina */
-
-  .pie-pagina {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  /* cv */
-
-  .proyectos {
-    margin: 0px;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
-  }
-}
-
-@media (max-width: 1200px) {
-  /* cv */
-
-  .proyectos__contenido {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .proyecto__encabezado {
-    margin-left: 50px;
-  }
-
-  /* sobre mi*/
-
-  .sobremi__dato {
-    overflow: scroll;
-  }
-  
-  /* habilidades */
-
-  .habilidades__encabezado-imagen{
-    display: none;
-  }
-
-}
-
-@media (max-width: 992px) {
-  /* sobre mi*/
-
-  .sobremi {
-    grid-template-columns: 1fr;
-  }
-
-  .sobremi__dato {
-    word-wrap: break-word;
-    height: 475px;
-  }
-
-  /* habilidades */
-
-  .habilidades__contenido{
-    grid-template-columns: 1fr;
-  }
-
-  .habilidades__contenido-dato{
-    height: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  /* sobre mi*/
-
-  .sobremi__dato {
-    word-wrap: break-word;
-    height: 600px;
-  }
-
-  /* encabezado */
-
-  .encabezado__contenido-menu {
-    display: none;
-  }
-  .encabezado__icono {
-    display: block;
-    font-size: 30px;
-  }
-  /* cv */
-  .proyectos__contenido {
-    grid-template-columns: 1fr;
-  }
-
-  .proyecto__encabezado:hover {
-    transform: none;
-  }
-
-  .proyecto__encabezado-imagen {
-    display: block;
-    margin: auto;
-  }
-}
-
-@media (max-width: 576px) {
-  /* sobre mi*/
-
-  .sobremi__dato {
-    word-wrap: break-word;
-    height: 100%;
-  }
-  .sobremi__imagen {
-    display: none;
-  }
-
-  /* pie pagina*/
-
-  .pie-pagina__dato__derechos {
-    display: none;
-  }
-
-  .pie-pagina__dato {
-    display: flex;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-  }
-
-  /* cv */
-
-  .proyecto__encabezado-imagen {
-    display: none;
-  }
-  .proyecto__descripcion {
-    overflow: scroll;
-  }
-
-  /* habilidades */
-
-  .habilidades__contenido-dato{
-    width: 80%;
-  }
-}
-
 
