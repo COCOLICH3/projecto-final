@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </head>
   <body class="contacto__body">
     <!-- comienzo del header -->
@@ -17,7 +19,19 @@
                     <li><a href="./habilidades.html">Habilidades</a></li>
                     <li><a href="./cv.html">CV</a></li>
                 </ul>
-                <span class="encabezado__icono">👨‍💻</span>
+                <li class="nav-item dropdown encabezado__responsive">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="./sobremi.html" class="dropdown-item">Sobre mi</a></li>
+                    <li><a href="./habilidades.html" class="dropdown-item">Habilidades</a></li>
+                    <li><a href="./cv.html" class="dropdown-item">CV</a></li>
+                    <li><a href="./contacto.html" class="dropdown-item">Contacto</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../index.html">Pagina principal</a></li>
+                  </ul>
+                </li>
             </nav>
         </div>
         </header>
@@ -28,17 +42,23 @@
         <div class="contacto__div"><h1>Contacto</h1></div>
         <!-- comienzo form contacto -->
         <form class="contacto__form">
-          <label for="nombre" class="contacto__text">Nombre</label>
-          <input type="text" name="nombre" class="contacto__text-holder" placeholder="Ingresa tu nombre" />
-          <label for="motivo" class="contacto__text">Motivo</label>
-          <select class="contacto__text-holder" name="motivo">
-            <option value="proyecto">Iniciar un proyecto</option>
-            <option value="propuesta_e">Propuesta laboral empresarial</option>
-            <option value="propuesta_f">Propuesta freelance</option>
-          </select>
-          <label for="mensaje" class="contacto__text">Mensaje</label>
-          <textarea name="subject" class="contacto__text-holder" placeholder="Escribi un mensaje"></textarea>
-          <input class="contacto__boton" type="submit" value="Enviar" />
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label contacto__text">Email address</label>
+            <input type="email" class="form-control contacto__text-holder"  placeholder="Ingresa tu nombre">
+          </div>
+          <div class="mb-3">
+            <label for="motivo" class="form-label contacto__text">Motivo</label>
+            <select class="contacto__text-holder form-select" name="motivo">
+              <option value="proyecto">Iniciar un proyecto</option>
+              <option value="propuesta_e">Propuesta laboral empresarial</option>
+              <option value="propuesta_f">Propuesta freelance</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="mensaje" class="form-label contacto__text">Mensaje</label>
+            <textarea class="form-control contacto__text-holder" rows="3"></textarea>
+          </div>
+          <button class="btn btn-primary"  type="submit" value="Enviar" >Enviar </button> 
         </form>
         <!-- fin form contacto -->
       </div>
