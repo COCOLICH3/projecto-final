@@ -1,0 +1,33 @@
+/* footer */
+  
+.pie-pagina{
+     bottom:0;
+     width:100%;
+     height:60px;   
+     background:#6cf;
+     background-color: black;
+     position: absolute;
+
+     &__contenido{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        align-items:center;
+        font-size:1.3rem;
+        font-family: "OpenSans";
+        color:rgba(255,255,255,.7);
+        & a{
+        color:rgba(255,255,255,.7)
+         //probe de poner aca adentro &:hover y no me lo tomaba
+        } 
+     }
+
+     &__dato{
+        margin: 20px;
+        font-size: medium;
+
+        &__derechos{
+         color: white;
+        }
+     }
+  }

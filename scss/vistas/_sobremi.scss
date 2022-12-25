@@ -1,0 +1,27 @@
+/* sobre mi */
+.sobremi__body {
+    background-color: #012e2e; }
+  
+  .sobremi {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px; 
+
+    &__dato{
+    background-color: #a09eb4;
+    width: 70%;
+    padding: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    height: 475px;
+    margin: 30px;
+    background-color: #a09eb4;
+    line-height: 1.8;
+    }
+
+    &__imagen {
+    background: url("../media/imagenes/pexels-mohamed-abdelghaffar-771742.jpg");
+    background-size: cover;
+    background-position: center;
+    }
+}

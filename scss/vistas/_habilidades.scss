@@ -1,0 +1,67 @@
+/* habilidades */
+
+.habilidades__body{
+    background-color: rgb(1, 46, 46);
+  }
+  
+  .habilidades{
+    margin-top: 60px;
+    padding: 50px 20px;
+    background-color: #a09eb4;  
+
+    &__titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        color: #995757;
+      }
+
+    &__contenido {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+
+        &-dato {
+            background-color: rgb(157, 160, 190);
+            width: 70%;
+            padding: 40px;
+            padding-left: 70px;
+            padding-right: 70px;
+            height: 475px;
+            margin: 30px;
+            line-height: 2;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+          }
+
+        &-titulo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+        &-articulo{
+            display: flex; 
+            align-items: center;
+            white-space: nowrap;
+          }
+
+          &-div{
+            width: 200px;
+          }
+
+          &-nivel{
+            font-family: "OpenSansBold";
+            padding-left: 5px; 
+            }
+      }
+
+      &__encabezado-imagen{
+        border-radius: 10px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        width: 25px;
+      }
+ 
+    }
+  

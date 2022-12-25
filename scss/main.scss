@@ -2,12 +2,23 @@
 
 @import 'componentes/variables';
 
-@import 'style';
-
 //componentes
 
 @import 'componentes/global';
 
 @import 'componentes/header';
 
+@import 'componentes/footer';
+
+//vistas
+
+@import 'vistas/contacto';
+
+@import 'vistas/cv';
+
+@import 'vistas/habilidades';
+
+@import 'vistas/index';
+
+@import 'vistas/sobremi'
 

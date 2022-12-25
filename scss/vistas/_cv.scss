@@ -1,0 +1,66 @@
+/* cv */
+
+.proyectos__body {
+    background-color: rgb(1, 46, 46);
+  }
+  .proyectos {
+    margin-top: 60px;
+    padding: 50px 20px;
+    background-color: #a09eb4;
+
+    &__contenido {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    &__titulo-principal{
+        margin-bottom: 40px;
+        text-align: center;
+        font-size: 30px;
+        color: #995757;
+    }
+  }
+  
+  
+  .proyecto {
+    background-color: rgb(157, 160, 190);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+
+    &__enlace{
+        background-color: #22c55e;
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        border-radius: 10px;
+        color: #e2e8f0;
+        padding: 15px 0;
+        font-weight: bold;
+    }
+
+    &__descripcion{
+        height: 50px;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+
+    &__titulo{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    &__encabedazo{
+        position: relative;
+
+        &-imagen{
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    }
+  }
+  
