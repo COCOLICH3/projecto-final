@@ -52,3 +52,23 @@
      width: 100%;
    }
   }
+
+  @media (max-width: $bpSmall) {
+  
+   /* pie pagina*/
+ 
+   .pie-pagina__dato__derechos {
+     display: none;
+   }
+ 
+   .pie-pagina__dato {
+     display: flex;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     right: 0;
+     width: 100%;
+     justify-content: center;
+     align-items: center;
+   }
+  }

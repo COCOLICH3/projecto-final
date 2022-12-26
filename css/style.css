@@ -105,6 +105,20 @@ ul {
     left: 0;
     width: 100%; } }
 
+@media (max-width: 576px) {
+  /* pie pagina*/
+  .pie-pagina__dato__derechos {
+    display: none; }
+  .pie-pagina__dato {
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center; } }
+
 /* contacto */
 .contacto__body {
   background-color: #012e2e; }
@@ -147,7 +161,8 @@ ul {
   margin-bottom: 40px;
   text-align: center;
   font-size: 30px;
-  color: #995757; }
+  color: #995757;
+  font-size: 2.5rem; }
 
 .proyecto {
   background-color: #9da0be;
@@ -219,7 +234,7 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: #995757; }
 
 .habilidades__contenido {
