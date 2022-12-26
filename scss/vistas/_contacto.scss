@@ -1,6 +1,6 @@
 /* contacto */
 .contacto__body {
-    background-color: #012e2e; }
+    background-color: $backgroundColor; }
   
     .contacto {
         width: 100%;
@@ -15,7 +15,7 @@
         line-height: 2; 
         
         &__div{
-            color: #995757;
+            color: $fontRed;
         }
 
         &__text{

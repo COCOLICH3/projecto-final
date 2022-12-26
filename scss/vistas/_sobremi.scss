@@ -1,11 +1,9 @@
 /* sobre mi */
 .sobremi__body {
-    background-color: #012e2e; }
+    background-color: $backgroundColor; }
   
   .sobremi {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px; 
+    @include gridVariable(2, false);
 
     &__dato{
     background-color: #a09eb4;
@@ -15,8 +13,12 @@
     padding-right: 70px;
     height: 475px;
     margin: 30px;
-    background-color: #a09eb4;
     line-height: 1.8;
+
+    &-titulo{
+      color: $fontRed;
+      
+    }
     }
 
     &__imagen {
@@ -24,4 +26,57 @@
     background-size: cover;
     background-position: center;
     }
+}
+
+@media (max-width: $bpMegaLarge) {
+  /* sobre mi*/
+
+  .sobremi__dato {
+    word-wrap: break-word;
+    height: 500px;
+  }
+}
+
+@media (max-width: $bpExtraLarge) {
+  
+  /* sobre mi*/
+
+  .sobremi__dato {
+    overflow: scroll;
+  }
+}
+
+@media (max-width: $bpLarge) {
+  /* sobre mi*/
+
+  .sobremi {
+    grid-template-columns: 1fr;
+  }
+
+  .sobremi__dato {
+    word-wrap: break-word;
+    height: 475px;
+  }
+
+  .sobremi__imagen {
+    display: none;
+  }
+}
+
+@media (max-width: $bpMedium) {
+  /* sobre mi*/
+
+  .sobremi__dato {
+    word-wrap: break-word;
+    height: 600px;
+  }
+}
+
+@media (max-width: $bpSmall) {
+  /* sobre mi*/
+
+  .sobremi__dato {
+    word-wrap: break-word;
+    height: 100%;
+  }
 }

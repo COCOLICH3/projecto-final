@@ -1,26 +1,23 @@
 /* habilidades */
 
 .habilidades__body{
-    background-color: rgb(1, 46, 46);
+    background-color: $backgroundColor;
   }
   
   .habilidades{
-    margin-top: 60px;
-    padding: 50px 20px;
-    background-color: #a09eb4;  
+    @extend .background;  
 
     &__titulo {
         display: flex;
         justify-content: center;
         align-items: center;
         font-size: 2rem;
-        color: #995757;
+        color: $fontRed;
       }
 
     &__contenido {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
+
+      @include gridVariable(2, false);
 
         &-dato {
             background-color: rgb(157, 160, 190);
@@ -65,3 +62,33 @@
  
     }
   
+@media (max-width: $bpExtraLarge) {
+    
+    /* habilidades */
+  
+    .habilidades__encabezado-imagen{
+      display: none;
+    }
+	}
+
+  @media (max-width: $bpLarge){
+  
+    /* habilidades */
+  
+    .habilidades__contenido{
+      grid-template-columns: 1fr;
+    }
+  
+    .habilidades__contenido-dato{
+      height: 250px;
+    }
+	}
+
+  @media (max-width: $bpSmall) {
+
+    /* habilidades */
+  
+    .habilidades__contenido-dato{
+      width: 80%;
+    }
+  }

@@ -6,8 +6,7 @@
     opacity: 0.5;
 
     &__contenido{
-        display: flex;
-        justify-content: space-between;
+        @extend .contenedor;
         align-items: center;
         max-width: 1200px;
         margin: 0 auto;
@@ -31,3 +30,15 @@
         display:none;
     }
   }
+
+  @media (max-width: $bpMedium) {
+    /* encabezado */
+  
+    .encabezado__contenido-menu {
+      display: none;
+    }
+    .encabezado__responsive {
+      display: block;
+      color: #e2e8f0;
+    }
+	} 

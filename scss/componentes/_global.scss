@@ -37,3 +37,29 @@
     src: url("../media/fuentes/Open_Sans/static/OpenSans/OpenSans-SemiBoldItalic.ttf");
     font-style: normal;
   }
+
+  //extends 
+
+  .contenedor{
+    display:flex;
+    justify-content:space-between;
+  }
+
+  .background{
+    margin-top: 60px;
+    padding: 50px 20px;
+    background-color: #a09eb4;  
+  }
+
+  //mixin
+
+  @mixin gridVariable($cantidadCol, $maxWidth){
+    display: grid;
+    grid-template-columns: repeat($cantidadCol, 1fr);
+    gap: 40px; 
+
+    @if($maxWidth == true){
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
