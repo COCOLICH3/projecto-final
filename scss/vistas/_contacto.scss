@@ -3,7 +3,7 @@
     background-color: $backgroundColor; }
   
     .contacto {
-        width: 100%;
+        width: 70%;
         padding: 40px;
         padding-left: 70px;
         padding-right: 70px;
@@ -11,6 +11,7 @@
         margin: 30px;
         margin-right: 30px;
         margin-bottom: 70px;
+        margin-left:280px;
         background-color: #a09eb4;
         line-height: 2; 
         
@@ -33,3 +34,28 @@
 
         }
     }
+
+
+@media (max-width: $bpExtraLarge) {
+  
+  /* contacto*/
+
+  .contacto {
+    overflow: hidden;
+    margin-left: 160px;
+  }
+
+}
+
+
+@media (max-width: $bpMedium) {
+  /* contacto*/
+
+  .contacto {
+    margin-left: 100px;
+  }
+  .contacto__form-boton{
+    text-align: center;
+  }
+ 
+}

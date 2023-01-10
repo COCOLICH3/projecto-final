@@ -4,7 +4,7 @@
   
   .sobremi {
     @include gridVariable(2, false);
-
+    margin-left:130px;
     &__dato{
     background-color: #a09eb4;
     width: 70%;
@@ -28,12 +28,21 @@
     }
 }
 
+@media (max-width: $bpLargest) {
+  /* sobre mi*/
+
+  .sobremi__dato {
+    word-wrap: break-word;
+    height: 700px;
+  }
+}
+
 @media (max-width: $bpMegaLarge) {
   /* sobre mi*/
 
   .sobremi__dato {
     word-wrap: break-word;
-    height: 500px;
+    height: 700px;
   }
 }
 
@@ -55,7 +64,8 @@
 
   .sobremi__dato {
     word-wrap: break-word;
-    height: 475px;
+    height: 600px;
+    text-align: center;
   }
 
   .sobremi__imagen {
@@ -77,6 +87,8 @@
 
   .sobremi__dato {
     word-wrap: break-word;
-    height: 100%;
   }
 }
+
+/* probe varias cosas no logro arreglar el scroll del div sobremi dato, 
+tampoco entiendo como no tendria scroll si el texto termina estirandose hacia abajo*/

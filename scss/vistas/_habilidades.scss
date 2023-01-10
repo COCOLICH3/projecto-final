@@ -18,6 +18,7 @@
     &__contenido {
 
       @include gridVariable(2, false);
+      margin-left: 110px;
 
         &-dato {
             background-color: rgb(157, 160, 190);
@@ -57,7 +58,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         margin-top: 20px;
-        width: 25px;
+        width: 35px;
       }
  
     }

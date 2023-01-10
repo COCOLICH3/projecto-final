@@ -68,6 +68,10 @@
     transform: scale(1.2);
   }
 
+  .btn{
+    width: 100%;
+  }
+
   @media (max-width: $bpMegaLarge) {
     /* cv */
   
@@ -97,8 +101,21 @@
   
     .proyectos__contenido {
       grid-template-columns: 1fr;
-      width: 40%;
+      width: 100%;
     }
+
+    .proyecto{
+      text-align: center;
+    }
+
+    .proyecto__encabezado-imagen{
+      margin-right: 50px;
+    }
+
+    .btn{
+      width: 50%;
+    }
+
 	}
 
   @media (max-width: $bpMedium) {
