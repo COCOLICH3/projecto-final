@@ -1,6 +1,6 @@
 # projecto-final
 
-TP de CoderHouse sobre Diseño Web - Portfolio realizado enteramente con HTML y CSS
+TP de CoderHouse sobre Diseño Web - Portfolio realizado enteramente con HTML y CSS y SASS
 
 Audit Results https://www.seoptimer.com/cocolich3.github.io 
 
