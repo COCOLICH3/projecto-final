@@ -78,7 +78,11 @@
 
   .sobremi__dato {
     word-wrap: break-word;
-    height: 600px;
+    width: 70%;
+  }
+
+  .sobremi__dato-p2{
+    display: none;
   }
 }
 
@@ -88,7 +92,8 @@
   .sobremi__dato {
     word-wrap: break-word;
   }
-}
 
-/* probe varias cosas no logro arreglar el scroll del div sobremi dato, 
-tampoco entiendo como no tendria scroll si el texto termina estirandose hacia abajo*/
+  .sobremi__dato-p1{
+    display: none;
+  }
+}
